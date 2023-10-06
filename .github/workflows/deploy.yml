@@ -17,15 +17,7 @@ jobs:
 
       - name: Deploy app
         run: |
-
-          # Clone your GitHub repository into the directory
+          ls -la
           sudo git clone https://github.com/GadoGadoEnjoyer/vote.git 
-
-          # Additional deployment steps, if needed
-          # For example, you might need to install dependencies, build your project, etc.
-
-          # Optionally, restart your web server to apply changes
-          # Replace 'your-web-server-command' with the appropriate command for your server
-          # sudo your-web-server-command
           
           echo "Deployment successful"
