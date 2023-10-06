@@ -19,16 +19,13 @@ jobs:
         run: |
           # Create a directory for your project in /var/www/
           mkdir -p /var/www/sukaair/
-
           # Clone your GitHub repository into the /var/www/sukaair/ directory
           cd /var/www/sukaair/
           git clone git@github.com:GadoGadoEnjoyer/vote.git
-
           # Additional deployment steps, if needed
           # For example, you might need to install dependencies, build your project, etc.
           
           # Optionally, restart your web server to apply changes
           # Replace 'your-web-server-command' with the appropriate command for your server
           # sudo your-web-server-command
-
           echo 'Deployment successful to /var/www/sukaair/'
