@@ -15,10 +15,7 @@ jobs:
           username: ${{secrets.SSH_USERNAME}}
           passphrase: ${{secrets.SSH_PASSPHRASE}}
           script: |
-            pwd
-            cd /var/www
-            pwd
-            ls -la
+            cd /var/www/sukaair/vote
             sudo git clone https://github.com/GadoGadoEnjoyer/vote.git 
             
             echo "Deployment successful"
