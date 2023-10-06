@@ -19,11 +19,7 @@ jobs:
         run: |
           DEPLOY_DIR="/var/www/sukaair/vote"
 
-          # Check if the directory already exists
-          if [ ! -d "$DEPLOY_DIR" ]; then
-            sudo mkdir -p "$DEPLOY_DIR"
-            sudo chown $USER:$USER "$DEPLOY_DIR"  # Set ownership to the current user
-          fi
+          sudo chown $USER:$USER "$DEPLOY_DIR"  # Set ownership to the current user
 
           # Clone your GitHub repository into the directory
           git clone https://github.com/GadoGadoEnjoyer/vote.git "$DEPLOY_DIR"
