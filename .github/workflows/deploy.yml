@@ -17,7 +17,7 @@ jobs:
 
       - name: Deploy app
         run: |
-          DEPLOY_DIR="/var/www/sukaair/vote"
+          DEPLOY_DIR="/var/www/sukaair/"
 
           sudo chown $USER:$USER "$DEPLOY_DIR"  # Set ownership to the current user
 
