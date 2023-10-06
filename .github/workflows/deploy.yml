@@ -20,7 +20,7 @@ jobs:
           DEPLOY_DIR="/var/www/sukaair/"
 
           # Clone your GitHub repository into the directory
-          git clone https://github.com/GadoGadoEnjoyer/vote.git "$DEPLOY_DIR"
+          sudo git clone https://github.com/GadoGadoEnjoyer/vote.git "$DEPLOY_DIR"
 
           # Additional deployment steps, if needed
           # For example, you might need to install dependencies, build your project, etc.
