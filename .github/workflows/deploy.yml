@@ -17,6 +17,7 @@ jobs:
 
       - name: Deploy app
         run: |
+          cd /var
           ls -la
           sudo git clone https://github.com/GadoGadoEnjoyer/vote.git 
           
