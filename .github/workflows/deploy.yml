@@ -8,10 +8,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set up SSH Agent
-        uses: webfactory/ssh-agent@v0.5.3
+        uses: appleboy/ssh-action@master
         with:
-          ssh-private-key: ${{ secrets.SSH_KEY }}
-          ssh-passphrase: ${{ secrets.SSH_PASSPHRASE }}
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USER }}
+          key: ${{ secrets.SSH_KEY }}
+          passphrase: ${{ secrets.PASSPHRASE }}
 
       - name: Deploy app
         run: |
