@@ -17,10 +17,9 @@ jobs:
 
       - name: Deploy app
         run: |
-          DEPLOY_DIR="/var/www/sukaair/"
 
           # Clone your GitHub repository into the directory
-          sudo git clone https://github.com/GadoGadoEnjoyer/vote.git "$DEPLOY_DIR"
+          sudo git clone https://github.com/GadoGadoEnjoyer/vote.git 
 
           # Additional deployment steps, if needed
           # For example, you might need to install dependencies, build your project, etc.
@@ -29,4 +28,4 @@ jobs:
           # Replace 'your-web-server-command' with the appropriate command for your server
           # sudo your-web-server-command
           
-          echo "Deployment successful to $DEPLOY_DIR"
+          echo "Deployment successful"
