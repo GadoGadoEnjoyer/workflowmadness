@@ -19,8 +19,6 @@ jobs:
         run: |
           DEPLOY_DIR="/var/www/sukaair/"
 
-          sudo chown $USER:$USER "$DEPLOY_DIR"  # Set ownership to the current user
-
           # Clone your GitHub repository into the directory
           git clone https://github.com/GadoGadoEnjoyer/vote.git "$DEPLOY_DIR"
 
