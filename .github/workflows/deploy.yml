@@ -18,7 +18,7 @@ jobs:
       - name: Deploy app
         run: |
           # Create a directory for your project in /var/www/
-          mkdir -p /var/www/sukaair/
+          sudo mkdir -p /var/www/sukaair/
           # Clone your GitHub repository into the /var/www/sukaair/ directory
           cd /var/www/sukaair/
           git clone git@github.com:GadoGadoEnjoyer/vote.git
