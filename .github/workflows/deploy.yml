@@ -15,7 +15,7 @@ jobs:
           username: ${{secrets.SSH_USERNAME}}
           passphrase: ${{secrets.SSH_PASSPHRASE}}
           script: |
-            cd /var/www/sukaair
-            sudo git pull https://github.com/GadoGadoEnjoyer/vote.git 
+            cd /var/www/sukaair/vote
+            sudo git pull origin main
             
             echo "Deployment successful"
